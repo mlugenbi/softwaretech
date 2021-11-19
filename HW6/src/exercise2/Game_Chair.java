@@ -29,6 +29,12 @@ public static void main(String[] args) {
 
 	}
 	
+/**
+ * Starts the game, the computer only receives one card number, player 2 may re-shuffle four times. 
+ * 
+ * @param p		The current player
+ * @return		The randomly generated card number
+ */
 	public static int Start(Player p) {
 		
 		if(p.isKI) {
@@ -70,6 +76,14 @@ public static void main(String[] args) {
 		return player_2_number;
 	}
 	
+	/**
+	 * Looks for the winner by comparing the players' card numbers.
+	 * In case the solutions are equal, player 2 wins.
+	 * 
+	 * @param p1	The computer
+	 * @param p2	Player 2
+	 * @return		The winner
+	 */
 	public static Player FindWinner(Player p1, Player p2) {
 		
 		if(p1.cardNumber <= p2.cardNumber) {
