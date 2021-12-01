@@ -28,9 +28,7 @@ public class IndividualTeam implements Team {
 		System.out.println("Team: " + this.name + ", Number of Gold Medals: " + this.goldMedals);
 	}
 
-	@Override
-	public void printName() {
-		// TODO Auto-generated method stub
-	}
+	
+
 
 }

@@ -38,6 +38,8 @@ public class CompositeTeam implements Team {
 	@Override
 	public void printAthletes() {
 		// TODO Auto-generated method stub
+		System.out.println(this.name);
+
 		for (Team sub : subTeams){
 			
 			sub.printAthletes();
@@ -49,6 +51,8 @@ public class CompositeTeam implements Team {
 	@Override
 	public void printGoldMedals() {
 		// TODO Auto-generated method stub
+		
+		System.out.println(this.name);
 		for (Team sub : subTeams){
 			
 			sub.printGoldMedals();
@@ -56,17 +60,7 @@ public class CompositeTeam implements Team {
 			
 		}	}
 
-	@Override
-	public void printName() {
-		// TODO Auto-generated method stub
-		System.out.println(this.name);
-		
-		for (Team sub : subTeams){
-			
-			sub.printName();
-			
-			
-		}
-	}
+	
+	
 
 }
